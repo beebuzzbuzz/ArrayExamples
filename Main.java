@@ -142,10 +142,10 @@ class Main
             else
                 System.out.println(ar1[i]);
         
-        System.out.println("** Tsk 6C **");
+        System.out.println("** Task 6C **");
         
         for (int i=0 ; i<ar1.length ; i++)
-            if (ar1[i]%3 == 0)
+            if (i%3 == 0) //means indicies are divisible by 3, if it was ar1[i] then it would be values divisible by 3
                 System.out.println(ar1[i]);              
         /*
          * Task 7.  For each element in ar1, 
@@ -158,6 +158,11 @@ class Main
          *          ar[2]=30
          *          ar[3]=4
          */
+        System.out.println("** Task 7 **");        
+        
+        for (int i=0 ; i<ar1.length ; i++)
+            if (!(ar1[i]%2 == 0))
+                System.out.println(ar1[i]*10);
         
          /*
           * Task 8
