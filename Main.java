@@ -275,12 +275,12 @@ class Main
          * Four score and seven years ago our fathers brought forth on
          * this continent a new nation
          *
-         *. ar5[0] = "Four"
+         *  ar5[0] = "Four"
          *  ar5[1] = "score"
          *  
-         *  Create another array of ints called ar6.  Write a for loop that
-         *  will iterate through each element in ar5 and the length of the
-         *  word is the element in ar6.
+         * Create another array of ints called ar6.  Write a for loop that
+         * will iterate through each element in ar5 and the length of the
+         * word is the element in ar6.
          *  
          *  ar5[0]= "Four"   ar6[0]=4
          *  ar5[1]="score"   ar6[1]=5
@@ -289,7 +289,38 @@ class Main
          *  Count how many words have more than 5 letters.
          */
         
-        /*
+        String[] ar5 = new String[16];
+
+        int[] ar6 = new int[16];
+            ar5[0]="Four";
+            ar5[1]="score";     
+            ar5[2]="and";   
+            ar5[3]="seven";
+            ar5[4]="years";
+            ar5[5]="ago";
+            ar5[6]="our";
+            ar5[7]="fathers";
+            ar5[8]="brought";
+            ar5[9]="forth";
+            ar5[10]="on";
+            ar5[11]="this";
+            ar5[12]="continent";
+            ar5[13]="a";
+            ar5[14]="new";
+            ar5[15]="nation";
+        
+            int count5=0;
+        for (int i=0; i<16; i++)
+            {
+             String arsix = ar5[i];
+             int p = arsix.length();
+             ar6[i] = p;
+             if (ar6[i]>4)
+                count5++;
+            }
+        
+        System.out.println(count5);
+/*
          * Task 13
          * Create an array called monsterArray of 5 Monsters.
          * The name of the monsters are
